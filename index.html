@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="./fontawesome-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    <title>Denlíne@</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="uk-flex uk-flex-between navbar-accounting">
+        <div class="uk-flex uk-flex-middle">
+            <div uk-toggle="target: .menu-vertical-accounting; cls: show" class="padding-horizontal-20">
+                <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-accounting; cls: width-menu-vertical-accounting"></i>
+            </div>
+            <div>
+                <img src="./data/logo1.png" class="logo-size-accounting" alt="">
+            </div>
+            <div class="uk-inline">
+                <div class="cursor-pointer uk-flex uk-flex-middle" style="margin-left: 60px;">
+                    <img class="logo-store-size-accounting" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down font-size-17"></i>
+                </div>
+                <div uk-drop="mode: click">
+                    <div style="position: relative;">
+                        <div class="drop-store-accounting">
+                            <!-- <ul class="uk-list " style="padding-bottom: 20px;">
+                                <h6 class="uk-margin-remove font-size-10" style="width: 65px; padding-bottom: 10px;">Documento del proveedor</h6>
+                                <div class="hr-tab"></div>
+                                <button class="button-search-supplier-accounting uk-text-bold">Buscar proveedor</button>
+                                <h6 class=" uk-margin-remove font-size-10">Seleccione tienda proveedora</h6>
+                                <div class="select-supplier-accounting">
+                                    <select>
+                                        <option>--</option>
+                                        <option>opción 1</option>
+                                        <option>opción 2</option>
+                                        <option>opción 3</option>
+                                        <option>opción 4</option>
+                                    </select>
+                                    <div class="select_arrow-supplier-accounting">
+                                    </div>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Proveedor:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Documento:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">--000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Teléfono:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">000</h6>
+                                </div>
+                                <div class="padding-vertical-10">
+                                    <h6 class="uk-margin-remove uk-text-bold font-size-12">Dirección:</h6>
+                                    <h6 class="uk-margin-remove font-size-12">N/A</h6>
+                                </div>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-inline cursor-pointer padding-horizontal-30 uk-flex uk-flex-middle">
+            <button class="button-data-user-accounting uk-flex uk-flex-middle">
+                <img class="logo-user-size-accounting" src="./data/user.png " alt=" ">
+                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                <i class="fas fa-caret-down "></i>
+            </button>
+            <div uk-drop="mode: click">
+                <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-accounting">
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                        <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                        <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                    </div>
+                    <div class="hr-tab"></div>
+                    <div class="padding-vertical-10">
+                        <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                        <h5 class="uk-margin-remove ">94518</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu vertical ERP-->
+    <div style="position: relative;">
+        <div class="menu-vertical-accounting">
+            <ul class="uk-list" style="padding-bottom: 20px;">
+                <div class="uk-flex uk-flex-between">
+                    <div style="margin-left: 33px;">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                        <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                    </div>
+                    <div style="padding-right: 5px;">
+                        <div uk-toggle="target: .menu-vertical-accounting; cls: show" style="margin-right: 10px;">
+                            <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-accounting">
+                        <img class="img-menu-vertical-size-accounting" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Mesas</h4>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Generar documentos contables -->
+    <div style="display: inline;">
+        <!-- Contenido -->
+        <div class="main-container-accounting">
+            <div class="uk-flex uk-flex-middle navbar-search-products-accounting">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; padding-top: 18px; height: 45px; border-bottom: 18px solid white;">
+                    <h4 class="uk-margin-remove uk-text-bold">Pedidos</h4>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center button-categories-accounting" style="width: 180px !important;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-top: 21px;">Ver mis pedidos</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar pedido</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Planilla</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Pedidos Reorden</h6>
+                </div>
+            </div>
+            <div style="margin-top: 30px;">
+                <div style="margin-left: 42px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue font-size-17">Datos del documento</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle">
+                    <div>
+                        <div class="uk-flex uk-flex-middle navbar-search-products-re-accounting" style="margin-left: 42px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tipo de documento</h6>
+                                <div class="select-create-product-accounting " style="width: 170px; ">
+                                    <select style="color: black; font-size: 10px;">
+                                            <option>Todos los tipos</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-accounting">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tipo de documento</h6>
+                                <div class="select-create-product-accounting " style="width: 170px; ">
+                                    <select style="color: black; font-size: 10px;">
+                                            <option>Todos los tipos</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-accounting">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tipo de documento</h6>
+                                <div class="select-create-product-accounting " style="width: 170px; ">
+                                    <select style="color: black; font-size: 10px;">
+                                            <option>Todos los tipos</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-accounting">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11 uk-text-bold">Fecha inicial</h6>
+                                <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                            </div>
+                            <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11 uk-text-bold ">Fecha Final</h6>
+                                <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                            </div>
+                            <div style="margin-left: 30px; margin-bottom: 5px;">
+                                <button class="button-search-actualice-accounting">Limpiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-product-select-accounting">
+                </div>
+                <div style="margin-left: 42px; margin-top: 10px;">
+                    <input class="input-register-user-accounting font-size-12" type="text" placeholder="Buscador" style="width: 150px;">
+                </div>
+                <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 42px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-150">Fecha</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Documento</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Cliente</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Tienda</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Dirección</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Ciudad</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-200">E-mail</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Teléfono</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Observaciones</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 42px;">
+                    <h6 class="uk-margin-remove font-size-11 width-150">2020-01-20 00:00:00</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">PC-269</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">SEARIZSE S.A.S</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">Distribuidora NAL</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">Cra 36 Nº. 12 - 251 Bodega 11</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">Yumbo</h6>
+                    <div class="uk-text-center">
+                        <h6 class="uk-margin-remove font-size-11 width-200">bodega.nalog@gmail.com</h6>
+                        <h6 class="uk-margin-remove font-size-11 width-200">comercial@superone.com.co</h6>
+                    </div>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">3206874344545</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-150">N/A</h6>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Ver documentos contables -->
+    <div style="display: none">
+        <div class="main-container-accounting">
+            <div class="uk-flex uk-flex-middle navbar-search-products-accounting">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Contabilidad</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Generar documentos contables</h6>
+                </div>
+                <div class="button-trademark-accounting uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 240px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Ver documentos contables</h6>
+                </div>
+                <div style="margin-left: 55px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar balance</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Agregar a PUC</h6>
+                </div>
+            </div>
+            <div style="margin-left: 40px; margin-top: 25px;">
+                <h5 class="uk-margin-remove uk-text-bold color-blue">Datos del documento</h5>
+                <div class="uk-flex uk-flex-middle">
+                    <div>
+                        <h6 class="uk-margin-remove font-size-11 ">Seleccione tipo de documento</h6>
+                        <div class="select-create-product-accounting " style="width: 170px; ">
+                            <select style="color: black; font-size: 10px;">
+                                    <option>Todos los tipos</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-accounting">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left: 100px; ">
+                        <h6 class="uk-margin-remove font-size-11 ">Seleccione estado de documento</h6>
+                        <div class="select-create-product-accounting" style="width: 170px; ">
+                            <select style="color: black; font-size: 10px;">
+                                    <option>Todos los estados</option>
+                                    <option>opción 1</option>
+                                    <option>opción 2</option>
+                                    <option>opción 3</option>
+                                    <option>opción 4</option>
+                                </select>
+                            <div class="select_arrow-create-product-accounting">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
+                        <h6 class="uk-margin-remove font-size-11 ">Fecha inicial</h6>
+                        <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                    </div>
+                    <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                        <h6 class="uk-margin-remove font-size-11 ">Fecha Final</h6>
+                        <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                    </div>
+                    <div style="margin-left: 250px;">
+                        <button class="button-search-actualice-accounting">Obtener documentos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-vertical-5" style="padding-bottom: 15px; padding-top: 20px;">
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Consecutivo</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-140" style="padding-left: 20px;">Tienda</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200">Fecha</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200" style="padding-left: 10px;">Tipo</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200">Estado</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200">Notas</h6>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-200"></h6>
+            </div>
+            <div class="hr-tab"></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-10">
+                <h6 class="uk-margin-remove font-size-11 width-150 uk-text-center">1</h6>
+                <h6 class="uk-margin-remove font-size-11 width-140" style="padding-left: 20px;">Sysware</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">2020-01-20 00:00:00</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200" style="padding-left: 10px;">Documento de apertura</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Aprobado</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Apertura de empresa pruebosa</h6>
+                <div style="width: 200px; padding-left: 22px;">
+                    <button class="button-search-actualice-accounting" style="width: 145px;">Abrir opciones</button>
+                </div>
+            </div>
+            <div class="hr-tab"></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-10">
+                <h6 class="uk-margin-remove font-size-11 width-150 uk-text-center">1</h6>
+                <h6 class="uk-margin-remove font-size-11 width-140" style="padding-left: 20px;">Sysware</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">2020-01-20 00:00:00</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200" style="padding-left: 10px;">Documento de apertura</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Aprobado</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Apertura de empresa pruebosa</h6>
+                <div style="width: 200px; padding-left: 22px;">
+                    <button class="button-search-actualice-accounting" style="width: 145px;">Abrir opciones</button>
+                </div>
+            </div>
+            <div class="hr-tab"></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-10">
+                <h6 class="uk-margin-remove font-size-11 width-150 uk-text-center">1</h6>
+                <h6 class="uk-margin-remove font-size-11 width-140" style="padding-left: 20px;">Sysware</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">2020-01-20 00:00:00</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200" style="padding-left: 10px;">Documento de apertura</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Aprobado</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Apertura de empresa pruebosa</h6>
+                <div style="width: 200px; padding-left: 22px;">
+                    <button class="button-search-actualice-accounting" style="width: 145px;">Abrir opciones</button>
+                </div>
+            </div>
+            <div class="hr-tab"></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-10">
+                <h6 class="uk-margin-remove font-size-11 width-150 uk-text-center">1</h6>
+                <h6 class="uk-margin-remove font-size-11 width-140" style="padding-left: 20px;">Sysware</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">2020-01-20 00:00:00</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200" style="padding-left: 10px;">Documento de apertura</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Aprobado</h6>
+                <h6 class="uk-margin-remove font-size-11 width-200">Apertura de empresa pruebosa</h6>
+                <div style="width: 200px; padding-left: 22px;">
+                    <button class="button-search-actualice-accounting" style="width: 145px;">Abrir opciones</button>
+                </div>
+            </div>
+            <div class="hr-tab"></div>
+        </div>
+    </div>
+    <!-- Generar balance-->
+    <div style="display: none">
+        <div class="main-container-accounting">
+            <div class="uk-flex uk-flex-middle navbar-search-products-accounting">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Contabilidad</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Generar documentos contables</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-left: 50px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Ver documentos contables</h6>
+                </div>
+                <div class="button-trademark-accounting uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 200px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Generar balance</h6>
+                </div>
+                <div style="margin-left: 45px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Agregar a PUC</h6>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <div class="uk-flex uk-flex-middle">
+                    <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
+                        <h6 class="uk-margin-remove font-size-11 uk-text-bold">Fecha inicial</h6>
+                        <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                    </div>
+                    <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                        <h6 class="uk-margin-remove font-size-11 uk-text-bold ">Fecha Final</h6>
+                        <input class="input-register-user-accounting font-size-12" type="date" style="width: 150px;">
+                    </div>
+                    <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                        <h6 class="uk-margin-remove font-size-11 uk-text-bold">Profundidad</h6>
+                        <input class="input-register-user-accounting font-size-12" style="width: 150px;" placeholder="8">
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <button class="button-search-actualice-accounting">Generar balance</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-shadow-down-accounting" style="height: 5px;"></div>
+        </div>
+    </div>
+    <!-- Agregar a PUC-->
+    <div style="display: none">
+        <div class="main-container-accounting">
+            <div class="uk-flex uk-flex-middle navbar-search-products-accounting">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Contabilidad</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Generar documentos contables</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Ver documentos contables</h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" ">Generar balance</h6>
+                </div>
+                <div class="button-pendients-reports uk-flex uk-flex-middle " style="margin-left: 55px; ">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer " style="padding-top: 30px; padding-left: 30px; ">Agregar a PUC</h6>
+                </div>
+            </div>
+            <div style="margin-top: 20px; ">
+                <h6 class="uk-margin-remove uk-text-bold color-blue " style="padding-left: 60px; padding-bottom: 15px; ">Cuenta padre seleccionada:</h6>
+                <div class="hr-tab "></div>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
+                <div style="width: 550px; ">
+                    <h6 class="uk-margin-remove font-weight-500 font-size-12 " style="padding-left: 60px; ">Código</h6>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Cuenta</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="width: 550px; ">
+                    <input class="inputs-PUC " type="text " style="margin-left: 60px; ">
+                </div>
+                <div style="width: 500px; ">
+                    <input class="inputs-PUC " type="text ">
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="width: 550px; ">
+                    <ul class="uk-nav-default " style="padding-left: 60px; " uk-nav>
+                        <li class="uk-parent ">
+                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>1</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Activo</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="width: 550px; ">
+                    <ul class="uk-nav-default " style="padding-left: 70px; " uk-nav>
+                        <li class="uk-parent ">
+                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>11</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Disponible</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="width: 550px; ">
+                    <ul class="uk-nav-default " style="padding-left: 80px; " uk-nav>
+                        <li class="uk-parent ">
+                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>1105</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Caja</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="width: 550px; ">
+                    <ul class="uk-nav-default " style="padding-left: 90px; " uk-nav>
+                        <li class="uk-parent ">
+                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>110505</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Caja General</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
+                <div style="width: 550px; ">
+                    <h6 class="uk-margin-remove " style="padding-left: 120px; font-size: 11.2px; font-weight: 700; ">110505</h6>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Caja 1</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
+                <div style="width: 550px; ">
+                    <h6 class="uk-margin-remove " style="padding-left: 108px; font-size: 11.2px; font-weight: 700; ">110505</h6>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-11 ">Caja Menores</h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle ">
+                <div style="margin-left: 80px; margin-top: 15px; ">
+                    <ul class="uk-pagination uk-margin-remove-bottom ">
+                        <li hidden><a href="# "><span uk-pagination-previous></span></a></li>
+                        <li class="uk-active "><span style="font-size: 11px; padding-right: 3px; ">1</span></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">2</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">3</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">4</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">5</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">6</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">7</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">8</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">9</a></li>
+                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">10</a></li>
+                        <li class="uk-disabled " ><span style="padding-right: 3px; ">...</span></li>
+                        <li><a href="# "><span style="padding-right: 3px; " uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 200px; margin-top: 15px; ">
+                    <h6 class="uk-margin-remove color-grey font-size-11 "> <span>1</span> of <span>16</span> pages ( <span>96</span> items ) </h6>
+                </div>
+            </div>
+            <div class="hr-tab "></div>
+            <div class="uk-flex uk-flex-middle " style="margin-top: 15px; ">
+                <div style="width: 550px; ">
+                    <div style="margin-left: 60px; ">
+                        <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Cuenta</h6>
+                        <input class="uk-text-center inputs-PUC " style="width: 230px; " type="text " placeholder="123 ">
+                    </div>
+                </div>
+                <div style="width: 500px; ">
+                    <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Cuenta</h6>
+                    <input class="uk-text-center inputs-PUC " style="width: 230px; " type="text " placeholder="ABC ">
+                </div>
+            </div>
+            <button class="button-PUC uk-text-bold ">Agregar cuenta PUC</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1970 @@
+.hr-tab {
+    border-bottom: 1px solid rgba(175, 175, 175, 0.685);
+}
+
+.hr-tab-list {
+    border-bottom: 1px solid rgba(212, 212, 212, 0.377);
+}
+
+.color-blue {
+    color: #3a6193;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-grey {
+    color: rgb(156, 156, 156);
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green-minus-plus {
+    color: rgb(1, 185, 1);
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-size-9 {
+    font-size: 9px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-11 {
+    font-size: 10px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-19 {
+    font-size: 19px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.padding-horizontal-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.padding-horizontal-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-horizontal-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.padding-horizontal-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.padding-horizontal-30 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.padding-vertical-3 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.padding-vertical-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padding-vertical-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-vertical-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.width-80 {
+    width: 80px !important;
+}
+
+.width-150 {
+    width: 150px;
+}
+
+.width-200 {
+    width: 200px;
+}
+
+.width-300 {
+    width: 300px;
+}
+
+.width-400 {
+    width: 400px;
+}
+
+.navbar-accounting {
+    box-shadow: 0px 6px 5px 0px rgba(61, 61, 61, 0.1);
+    height: 80px !important;
+    width: 100%;
+    position: fixed;
+    z-index: 200 !important;
+    background-color: white;
+}
+
+.menu-vertical-accounting {
+    background-color: white;
+    top: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 200px !important;
+    box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    height: calc(100% - 80px) !important;
+    position: fixed;
+    z-index: 100;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    display: none;
+}
+
+.menu-vertical-accounting::-webkit-scrollbar {
+    display: none;
+}
+
+.main-container-accounting {
+    top: 60px;
+    width: 100% !important;
+    height: calc(100%-90px);
+    z-index: 1;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+.width-menu-vertical-accounting {
+    width: calc(100%-250px) !important;
+}
+
+.logo-size-accounting {
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.button-data-user-accounting {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-data-user-accounting:focus {
+    outline: none;
+}
+
+.logo-user-size-accounting {
+    height: 38px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.drop-data-user-accounting {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px !important;
+}
+
+.drop-store-accounting {
+    background-color: white;
+    width: 110px !important;
+    height: calc(100% - 70px) !important;
+    position: fixed;
+    z-index: 100;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: -1px 6px 9px 0px rgba(0, 0, 0, 0.35);
+}
+
+.logo-store-size-accounting {
+    height: 40px;
+    width: 130px;
+}
+
+.show {
+    display: block;
+}
+
+.items-menu-vertical-accounting {
+    margin: 5px !important;
+    height: 45px;
+    width: 200px;
+    padding-left: 15px;
+}
+
+.items-menu-vertical-accounting:hover {
+    background-color: #B1FFA6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img-menu-vertical-size-accounting {
+    height: 40px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.form-search-accounting {
+    color: #3a6193 !important;
+    border-bottom: 1px solid #3a6193a1 !important;
+    font-size: 18px;
+    width: 200px !important;
+}
+
+.form-search-accounting::placeholder {
+    color: #3a6193 !important;
+    font-size: 12px;
+}
+
+.button-search-accounting {
+    border-radius: 5px;
+    color: #6d6c6c;
+    border: 1px solid rgba(153, 152, 152, 0.76);
+    font-size: 11px;
+    background-color: white;
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    margin-left: 90px;
+}
+
+.button-search-accounting:focus {
+    outline: 0;
+}
+
+.navbar-search-products-accounting {
+    height: 50px;
+    box-shadow: 0px 5px 7px -2px rgba(0, 0, 0, 0.15);
+}
+
+.drop-list-products-accounting {
+    height: 210px;
+    width: 850px;
+    box-shadow: inset -2px 6px 8px -5px rgba(71, 71, 71, 0.25);
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border: 8px none #ffffff;
+    border-radius: 50px;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-thumb:hover {
+    background: #afafaf;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-thumb:active {
+    background: #afafaf;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border: 8px none #ffffff;
+    border-radius: 50px;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-track:hover {
+    background: #e6e6e6;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-track:active {
+    background: #e6e6e6;
+}
+
+.drop-list-products-accounting::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.text-list-drop-accounting {
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.text-list-drop-accounting:hover {
+    background-color: rgb(187, 187, 187);
+    color: white;
+}
+
+.select-seller-accounting {
+    position: relative;
+    display: inline-block;
+    width: 167px;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.select-seller-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #727272 !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #8b8b8bdf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-seller-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-seller-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-seller-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select-seller-accounting select:hover~.select_arrow-seller-accounting,
+.select-seller-accounting select:focus~.select_arrow-seller-accounting {
+    border-top-color: #000000;
+}
+
+.select-seller-accounting select:disabled~.select_arrow-seller-accounting {
+    border-top-color: #cccccc;
+}
+
+.buttons-total-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 28px;
+    width: 197px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.buttons-total-accounting:focus {
+    outline: 0;
+}
+
+.navbar-product-select-accounting {
+    box-shadow: inset 0px 3px 5px 0px rgba(78, 78, 78, 0.25);
+    padding-top: 10px;
+}
+
+.drop-option-cash-accounting {
+    height: 240px;
+    width: 400px;
+    border: 1px solid rgba(153, 153, 153, 0.541);
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 310px;
+    z-index: 20;
+    position: relative;
+}
+
+.button-option-cash-accounting {
+    background-color: white;
+    border: none;
+    padding: 0px !important;
+    margin: 0px !important;
+    cursor: pointer;
+    height: 50px;
+}
+
+.button-option-cash-accounting:focus {
+    outline: 0;
+}
+
+.button-border-right-none-accounting {
+    width: 160px;
+    background-color: white;
+    height: 50px;
+    border-right: none;
+}
+
+.button-movements-cash-accounting {
+    height: 33px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    width: 180px;
+    margin-left: 0px;
+    padding-left: 25px;
+}
+
+.button-movements-cash-accounting:focus {
+    outline: 0;
+}
+
+.button-close-cash-accounting {
+    height: 33px;
+    width: 220px;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+.button-close-cash-accounting:focus {
+    outline: 0;
+}
+
+.buttons-final-drop-movement-cash-accounting {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(153, 153, 153);
+    background-color: white;
+    font-weight: 600;
+    color: blue;
+    border-top: 1px solid rgba(200, 200, 200, 0.466);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.border-bottom-accounting {
+    border-bottom: 1px solid rgba(167, 167, 167, 0.787);
+    box-shadow: inset 3px 0px 6px -2px rgba(0, 0, 0, 0.35);
+}
+
+.border-bottom-two-accounting {
+    border-bottom: 1px solid rgba(167, 167, 167, 0.787);
+    box-shadow: inset -3px 0px 6px -2px rgba(0, 0, 0, 0.35);
+}
+
+.buttons-final-drop-movement-cash-accounting:focus {
+    outline: 0;
+}
+
+.modal-other-movements-accounting {
+    top: 200px;
+    background-color: white;
+    width: 580px !important;
+    height: 150px !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.width-450 {
+    width: 450px;
+}
+
+.button-return-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 30px;
+    width: 55px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+.button-return-accounting:focus {
+    outline: 0;
+}
+
+.inputs-close-cash-accounting {
+    border: none;
+    border-bottom: 1px solid rgb(1, 1, 167);
+    width: 140px;
+}
+
+.inputs-close-cash-accounting:focus {
+    outline: 0;
+}
+
+.buttons-close-cash-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 30px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buttons-close-cash-accounting:focus {
+    outline: 0;
+}
+
+.most-selled-products-accounting {
+    top: 50px;
+    background-color: white;
+    width: 550px !important;
+    height: 400px !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+}
+
+.width-275 {
+    width: 275px;
+}
+
+.img-size-bag-accounting {
+    width: 42px;
+    height: 42px;
+}
+
+.text-img-bag-navbar-accounting {
+    color: #3a6193;
+    left: 25px;
+    top: -32px;
+}
+
+.menu-vertical-categories-accounting {
+    top: 135px;
+    padding-top: 5px;
+    width: 100px !important;
+    height: calc(100% - 135px) !important;
+    position: fixed;
+    z-index: 30 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+}
+
+.menu-vertical-categories-accounting::-webkit-scrollbar {
+    display: none;
+}
+
+.button-categories-menu-vertical-accounting {
+    background-color: white;
+    border: none;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+    width: 110px;
+    margin-bottom: 5px;
+}
+
+.button-categories-menu-vertical-accounting:focus {
+    outline: 0;
+}
+
+.img-categories-menu-vertical-accounting {
+    min-width: 65px;
+    max-width: 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.categories-menu-vertical-accounting {
+    position: fixed !important;
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-categories-menu-vertical-accounting {
+    height: 92px !important;
+    width: 560px !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(182, 182, 182);
+    border-left: none;
+    padding: 0px !important;
+    transition-duration: 0s, 0s !important;
+    margin: 0px !important;
+}
+
+.subcategories-menu-vertical-accounting {
+    margin: 0px !important;
+    transition-duration: 0s, 0s !important;
+}
+
+.box-subcategories-menu-vertical-accounting {
+    height: 195px !important;
+    width: 90px !important;
+    transition-duration: 0s, 0s !important;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.img-items-menu-scroll-accounting {
+    min-width: 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button-items-menu-categories-accounting {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-accounting {
+    background-color: white;
+    border: none;
+    height: 90px;
+    width: 90px !important;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-categories-accounting:hover {
+    background-color: #B1FFA6;
+}
+
+.main-container-products-selection-accounting {
+    width: 840px;
+    padding-left: 170px;
+    padding-top: 70px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card-products-add-accounting {
+    width: 230px !important;
+    min-width: 210px !important;
+    height: 290px !important;
+    border: 1px solid rgba(189, 189, 189, 0.835);
+    border-radius: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.card-products-add-accounting:hover {
+    border: 1.5px solid rgb(2, 173, 2);
+}
+
+.img-items-products-add-70-accounting {
+    min-width: 70px;
+    max-width: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+}
+
+.button-discount-card-accounting {
+    border-radius: 10px;
+    background-color: rgb(0, 0, 102);
+    color: white;
+    width: 50px !important;
+    text-align: center;
+    bottom: 260px;
+    right: 190px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+
+.button-card-add-product-accounting {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    width: 60px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.like-size-card-accounting {
+    height: 40px;
+    width: 40px;
+    left: 190px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.main-container-products-selection-second-accounting {
+    margin-top: 50px;
+    position: fixed;
+}
+
+.subnavbar-search-products-accounting {
+    position: fixed;
+    z-index: 200;
+    background-color: white;
+    width: 980px;
+    height: 55px;
+}
+
+.related-products-box-accounting {
+    width: 320px;
+    height: 255px;
+    box-shadow: inset 0px -2px 7px 1px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-top: 10px;
+}
+
+.related-products-box-accounting::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-thumb {
+    background: #afafaf;
+    border: 8px none #ffffff;
+    border-radius: 50px;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-thumb:hover {
+    background: #afafaf;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-thumb:active {
+    background: #afafaf;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border: 8px none #ffffff;
+    border-radius: 50px;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-track:hover {
+    background: #e6e6e6;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-track:active {
+    background: #e6e6e6;
+}
+
+.related-products-box-accounting::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.modal-manual-billing-accounting {
+    width: 550px !important;
+    height: 540px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.inputs-manual-billing-accounting {
+    border: none;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.787);
+    width: 70px;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.inputs-manual-billing-accounting:focus {
+    outline: 0;
+}
+
+.box-shadow-down-accounting {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.image-bill-icons-accounting {
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.image-coin-icons-accounting {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.modal-alert-partial-payment-accounting {
+    height: 120px !important;
+    width: 250px !important;
+    border-radius: 15px;
+    padding-top: 20px;
+    margin-top: 200px !important;
+}
+
+.buttons-modal-alert-partial-payment-accounting {
+    height: 25px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: rgba(173, 173, 173, 0.794);
+    cursor: pointer;
+}
+
+.buttons-modal-alert-partial-payment-accounting:focus {
+    outline: 0;
+}
+
+.select-cash-accounting {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+.select-cash-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid #a7a7a7c5;
+    font-size: 9px;
+    padding-left: 40px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #0c0fc3;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-cash-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-cash-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-cash-accounting {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    margin-right: 5px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select-cash-accounting select:hover~.select_arrow-cash-accounting,
+.select-cash-accounting select:focus~.select_arrow-cash-accounting {
+    border-top-color: #000000;
+}
+
+.select-cash-accounting select:disabled~.select_arrow-cash-accounting {
+    border-top-color: #cccccc;
+}
+
+.select-clients-accounting {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+.select-clients-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid rgba(165, 165, 165, 0.787);
+    font-size: 9px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #0c0fc3;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 20px;
+}
+
+.select-clients-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-clients-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-clients-accounting {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    margin-right: 5px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select-clients-accounting select:hover~.select_arrow-clients-accounting,
+.select-clients-accounting select:focus~.select_arrow-clients-accounting {
+    border-top-color: #000000;
+}
+
+.select-clients-accounting select:disabled~.select_arrow-clients-accounting {
+    border-top-color: #cccccc;
+}
+
+.inputs-register-debit-card-accounting {
+    border: 1px solid rgba(175, 175, 175, 0.74);
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.inputs-register-debit-card-accounting::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 11px;
+}
+
+.image-debit-card-accounting {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.buttons-options-payments-accounting {
+    border-radius: 5px;
+    border: 1px solid rgba(172, 172, 172, 0.65);
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    color: blue;
+    background-color: white;
+    font-size: 12px;
+}
+
+.buttons-options-payments-accounting:focus {
+    outline: 0;
+}
+
+.input-observations-accounting {
+    width: 395px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 64px;
+}
+
+.input-observations-accounting:focus {
+    outline: 0;
+}
+
+.input-observations-accounting::placeholder {
+    color: grey;
+    font-size: 12px;
+}
+
+.input-provider-code-accounting {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 90px;
+    margin-left: 15px;
+}
+
+.input-provider-code-accounting:focus {
+    outline: 0;
+}
+
+.select-supplier-accounting {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border: none !important;
+}
+
+.select-supplier-accounting select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 12px;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #585757df;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-supplier-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-supplier-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-supplier-accounting {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select-supplier-accounting select:hover~.select_arrow-supplier-accounting,
+.select-supplier-accounting select:focus~.select_arrow-supplier-accounting {
+    border-top-color: #000000;
+}
+
+.select-supplier-accounting select:disabled~.select_arrow-supplier-accounting {
+    border-top-color: #cccccc;
+}
+
+.button-search-supplier-accounting {
+    border: 1px solid rgba(177, 177, 177, 0.938);
+    border-radius: 10px;
+    font-size: 11px;
+    color: rgb(0, 0, 184);
+    background-color: white;
+    height: 28px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.button-search-supplier-accounting:focus {
+    outline: 0;
+}
+
+.inputs-modal-create-products-accounting {
+    border: none;
+    border-bottom: 1px solid #757474fd;
+    width: 140px;
+}
+
+.inputs-modal-create-products-accounting::placeholder {
+    color: #757474fd;
+    font-size: 11px;
+}
+
+.inputs-modal-create-products-accounting:focus {
+    outline: 0;
+}
+
+.select-create-product-accounting {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    border: none !important;
+    margin-bottom: 21x;
+}
+
+.select-create-product-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: 1px solid #85bcff !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.493);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-create-product-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-create-product-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-create-product-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: black transparent transparent transparent;
+}
+
+.select-create-product-accounting select:hover~.select_arrow-create-product-accounting,
+.select-create-product-accounting select:focus~.select_arrow-create-product-accounting {
+    border-top-color: black;
+}
+
+.select-create-product-accounting select:disabled~.select_arrow-create-product-accounting {
+    border-top-color: #050505;
+}
+
+.button-search-provider-modal-create-product-accounting {
+    border: 1px solid rgba(155, 154, 154, 0.753);
+    font-size: 11px;
+    background-color: white;
+    height: 23px;
+    border-radius: 5px;
+    color: rgb(167, 167, 167);
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.button-search-provider-modal-create-product-accounting:focus {
+    outline: 0;
+}
+
+.modal-create-product-accounting {
+    width: 780px !important;
+    padding-left: 40px !important;
+    padding-top: 20px !important;
+    height: 520px;
+    border-radius: 30px;
+}
+
+.image-box-image-create-product-accounting {
+    width: 130px;
+    margin-top: 25px;
+}
+
+.button-upload-image-accounting {
+    width: 100px;
+    height: 70px;
+    background-color: #05356B;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.icon-upload-image-accounting {
+    width: 28px;
+    margin-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.buttons-create-products-accounting {
+    background-color: white;
+    border: 1px solid rgba(192, 192, 192, 0.808);
+    color: #05356B;
+    height: 27px;
+    font-size: 11px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons-create-products-accounting {
+    outline: 0;
+}
+
+.modal-list-provider-accounting {
+    width: 670px !important;
+    height: 520px;
+    border-radius: 30px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.modal-list-provider-accounting::-webkit-scrollbar {
+    display: none;
+}
+
+.padding-vertical-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button-edit-provider-accounting {
+    background-color: white;
+    border: 1px solid rgba(184, 184, 184, 0.753);
+    font-size: 11px;
+    color: #094a95;
+    margin: 0px;
+    height: 28px;
+    width: 60px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.input-card-search-categories-accounting {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 85px;
+}
+
+.input-card-search-categories-accounting:focus {
+    outline: 0;
+}
+
+.input-card-search-categories-accounting::placeholder {
+    font-size: 11px;
+}
+
+.select-search-categories-accounting {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.select-search-categories-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 10px;
+    border-bottom: 1px solid #727272 !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #8b8b8bdf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-search-categories-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-search-categories-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-search-categories-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.select-search-categories-accounting select:hover~.select_arrow-search-categories-accounting,
+.select-search-categories-accounting select:focus~.select_arrow-search-categories-accounting {
+    border-top-color: #000000;
+}
+
+.select-search-categories-accounting select:disabled~.select_arrow-search-categories-accounting {
+    border-top-color: #cccccc;
+}
+
+.input-observations-search-categories-accounting {
+    width: 282px;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 20px;
+}
+
+.input-observations-search-categories-accounting::placeholder {
+    font-size: 10px;
+}
+
+.buttons-total-search-categories-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 28px;
+    width: 130px;
+    background-color: white;
+    color: #0554bb;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.buttons-total-search-categories-accounting:focus {
+    outline: 0;
+}
+
+.width-240 {
+    width: 240px;
+}
+
+.button-cancel-movement-accounting {
+    border: 1px solid rgba(189, 189, 189, 0.822);
+    color: rgb(0, 0, 167);
+    border-radius: 10px;
+    background-color: white;
+    height: 33px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-cancel-movement-accounting:focus {
+    outline: 0;
+}
+
+.button-categories-accounting {
+    width: 130px;
+    height: 45px;
+    border-bottom: 20px solid white !important;
+    box-shadow: 7px -5px 12px -6px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none;
+    padding-left: 50px;
+}
+
+.buttons-categories-add-edit-accounting {
+    border: 1px solid rgba(173, 173, 173, 0.815);
+    background-color: white;
+    font-size: 11px;
+    color: rgb(0, 0, 179);
+    height: 30px;
+    width: 80px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons-categories-add-edit-accounting:focus {
+    outline: 0;
+}
+
+.modal-add-category-accounting {
+    border-radius: 30px;
+    width: 550px !important;
+    height: 280px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-top: 100px !important;
+}
+
+.inputs-add-category-accounting {
+    border: none;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    width: 460px;
+    margin-top: 20px;
+}
+
+.inputs-add-category-accounting::placeholder {
+    color: rgb(158, 158, 158);
+    font-size: 13px;
+}
+
+.buttons-add-category-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.781);
+    height: 30px;
+    background-color: white;
+    color: #003c8b;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+.buttons-add-category-accounting:focus {
+    outline: 0;
+}
+
+.button-trademark-accounting {
+    width: 180px;
+    height: 45px;
+    border-bottom: 21px solid white !important;
+    box-shadow: 0px -17px 12px 1px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none;
+}
+
+.button-trademark-boxs-accounting {
+    width: 180px;
+    height: 45px;
+    border-bottom: 15px solid white !important;
+    box-shadow: none;
+    border-left: 2px solid rgba(158, 158, 158, 0.137);
+    border-right: 2px solid rgba(158, 158, 158, 0.137);
+}
+
+.buttons-select-trademarks-accounting {
+    height: 70px;
+    width: 96px;
+    background-color: #3B6093;
+    border: none;
+    border-radius: 10px;
+    margin-top: -35px !important;
+}
+
+.width-90 {
+    width: 90px;
+}
+
+.width-110 {
+    width: 110px;
+}
+
+.modal-add-measurement-accounting {
+    border-radius: 30px;
+    width: 550px !important;
+    height: 230px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-top: 100px !important;
+}
+
+.select-create-product-accounting {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    border: none !important;
+    margin-bottom: 21x;
+}
+
+.select-create-product-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: 1px solid #85bcff !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-create-product-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-create-product-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.width-180 {
+    width: 180px;
+}
+
+.width-140 {
+    width: 140px;
+}
+
+.select_arrow-create-product-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.select-create-product-accounting select:hover~.select_arrow-create-product-accounting,
+.select-create-product-accounting select:focus~.select_arrow-create-product-accounting {
+    border-top-color: rgba(0, 0, 0, 0.404);
+}
+
+.select-create-product-accounting select:disabled~.select_arrow-create-product-accounting {
+    border-top-color: #cccccc;
+}
+
+.navbar-search-products-re-accounting {
+    height: 70px;
+    width: 100%;
+}
+
+.input-date-accounting {
+    border: none;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.459);
+    width: 140px;
+    color: rgba(0, 0, 0, 0.527);
+    cursor: pointer;
+}
+
+.input-date-accounting:focus {
+    outline: 0;
+}
+
+.input-date-accounting::placeholder {
+    color: rgba(77, 77, 77, 0.459);
+}
+
+.navbar-product-select-accounting {
+    box-shadow: inset 0px 3px 5px 0px rgba(78, 78, 78, 0.25);
+    padding-top: 10px;
+}
+
+.button-search-accounting {
+    border-radius: 5px;
+    color: #6d6c6c;
+    border: 1px solid rgba(179, 179, 179, 0.76);
+    font-size: 11px;
+    background-color: white;
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.button-search-accounting:focus {
+    outline: 0;
+}
+
+.select-grafics-accounting {
+    border-radius: 0px !important;
+    border: 1px solid rgb(155, 155, 155) !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 15px !important;
+}
+
+.select-grafics-accounting:focus {
+    background-color: black !important;
+}
+
+.box-color-grafics-accounting {
+    width: 4px;
+    height: 12px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.input-red-accounting {
+    border: none;
+    border-bottom: 1px solid red;
+    width: 120px;
+    padding-top: 22px;
+    margin-left: 45px;
+}
+
+.input-red-accounting::placeholder {
+    color: red;
+    font-size: 11px;
+}
+
+.buttons-products-accounting {
+    background-color: white;
+    border: 1px solid rgba(184, 184, 184, 0.794);
+    border-radius: 5px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 18px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.buttons-products-accounting:focus {
+    outline: 0;
+}
+
+.select-store-box-accounting {
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    border: none !important;
+    margin-bottom: 20px;
+}
+
+.select-store-box-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(2, 2, 197, 0.377) !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: rgba(2, 2, 197, 0.493);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-store-box-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-store-box-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-store-box-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: rgb(2, 2, 197) transparent transparent transparent;
+}
+
+.select-store-box-accounting select:hover~.select_arrow-store-box-accounting,
+.select-store-box-accounting select:focus~.select_arrow-store-box-accounting {
+    border-top-color: #000000;
+}
+
+.select-store-box-accounting select:disabled~.select_arrow-store-box-accounting {
+    border-top-color: #cccccc;
+}
+
+.buttons-generate-accounting {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    border-top: 1px solid rgba(219, 219, 219, 0.705) !important;
+    height: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    width: 125px;
+    cursor: pointer;
+}
+
+.buttons-generate-accounting:focus {
+    outline: 0;
+}
+
+.button-pendients-accounting {
+    width: 300px;
+    height: 45px;
+    border-bottom: 30px solid white !important;
+    box-shadow: -2px -6px 5px 0px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none;
+}
+
+.button-search-actualice-accounting {
+    border: 1px solid rgba(179, 179, 179, 0.651);
+    height: 30px;
+    background-color: white;
+    color: rgb(0, 0, 182);
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 10.5px;
+}
+
+.button-search-actualice-accounting:focus {
+    outline: 0;
+}
+
+.input-register-user-accounting {
+    border: none;
+    border-bottom: 1px solid #85bcff;
+    width: 180px;
+    color: rgba(0, 0, 182, 0.527);
+    cursor: pointer;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.input-register-user-accounting:focus {
+    outline: 0;
+}
+
+.input-register-user-accounting::placeholder {
+    color: rgba(0, 0, 182, 0.459);
+    font-size: 11px;
+}
+
+.select-register-enterprise-accounting {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    border: none !important;
+    margin-right: 85px;
+}
+
+.select-register-enterprise-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: none !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: black;
+    font-weight: 600;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-register-enterprise-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-register-enterprise-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-register-enterprise-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: black transparent transparent transparent;
+}
+
+.select-register-enterprise-accounting select:hover~.select_arrow-register-enterprise-accounting,
+.select-register-enterprise-accounting select:focus~.select_arrow-register-enterprise-accounting {
+    border-top-color: #000000;
+}
+
+.select-register-enterprise-accounting select:disabled~.select_arrow-register-enterprise-accounting {
+    border-top-color: #cccccc;
+}
+
+.select-general-document-accounting {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    border: none !important;
+}
+
+.select-general-document-accounting select {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    font-size: 11px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.377) !important;
+    border-radius: 0px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.493);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-general-document-accounting select::-ms-expand {
+    display: none;
+}
+
+.select-general-document-accounting select:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select_arrow-general-document-accounting {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 6px 3px 0px 5px;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.select-general-document-accounting select:hover~.select_arrow-general-document-accounting,
+.select-general-document-accounting select:focus~.select_arrow-general-document-accounting {
+    border-top-color: #000000;
+}
+
+.select-general-document-accounting select:disabled~.select_arrow-general-document-accounting {
+    border-top-color: #cccccc;
+}
+
+.button-selected-count {
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    border-radius: 5px;
+    height: 27px;
+    width: 385px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-pendients-reports {
+    width: 485px;
+    height: 45px;
+    border-bottom: 30px solid white !important;
+    box-shadow: -2px -6px 5px 0px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none;
+}
+
+.color-black {
+    color: black;
+}
+
+.inputs-PUC {
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 300px;
+    margin-bottom: 3px;
+}
+
+.inputs-PUC:focus {
+    outline: 0;
+}
+
+.inputs-PUC::placeholder {
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+}
+
+.button-PUC {
+    border: 1px solid rgb(175, 175, 175);
+    color: blue;
+    background-color: white;
+    font-size: 11px;
+    border-radius: 8px;
+    height: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.button-PUC:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select {
+    font-family: 'Roboto', sans-serif !important;
+}
