@@ -394,7 +394,7 @@
         </div>
     </div>
     <!-- Ver documentos contables -->
-    <div style="display: inline">
+    <div style="display: none">
         <div class="main-container-orders">
             <div class="uk-flex uk-flex-middle navbar-search-products-orders">
                 <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
@@ -439,48 +439,52 @@
                 </div>
                 <div class="uk-flex uk-flex-middle" style="margin-top: 15px;">
                     <div class="uk-text-break">
-                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Proveedor</h6>
+                        <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Proveedor</h6>
                         <h6 class="uk-margin-remove font-size-11">JESUS ANTONIO VERGARA</h6>
                     </div>
                     <div class="width-90" style="margin-left: 40px;">
-                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Documento</h6>
+                        <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Documento</h6>
                         <h6 class="uk-margin-remove font-size-11">CC-10232306</h6>
                     </div>
                     <div class="width-90">
-                        <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Teléfono</h6>
+                        <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Teléfono</h6>
                         <h6 class="uk-margin-remove font-size-11">3128541582</h6>
                     </div>
                     <div class="width-240">
                         <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Dirección</h6>
-                        <h6 class="uk-margin-remove font-size-11">CL 13 CON CR 80 SAN ANDRESITO BARRIO CENTRO</h6>
+                        <h6 class="uk-margin-remove font-size-11">CR 42 A 13 B 80 BARRIO GUABAL</h6>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-middle">
-                    <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
-                        <h6 class="uk-margin-remove font-size-11">Selec. tipo factura</h6>
-                        <input class="input-register-user-orders font-size-12" type="text" placeholder="Jesus" style="width: 120px;">
+                <div class="uk-flex uk-flex-middle" style="margin-top: 35px;">
+                    <div>
+                        <h6 class="uk-margin-remove font-size-11">Código de producto</h6>
+                        <input class="input-register-user-orders font-size-12" type="text" style="width: 130px;">
                     </div>
                     <div>
-                        <button class="button-search-actualice-orders" style="height: 25px;">Buscar</button>
+                        <button class="button-search-actualice-orders uk-text-muted" style="padding: 5px;">Generar pedido</button>
                     </div>
-                    <div>
-                        <button class="button-search-actualice-orders" style="height: 25px;">Buscar</button>
+                    <div style="margin-left: 8px;">
+                        <button class="button-search-actualice-orders" style="width: 90px;">Cancelar</button>
                     </div>
-                    <div class="uk-flex uk-flex-middle" style="margin-top: 15px;">
-                        <div class="uk-text-break">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Proveedor</h6>
-                            <h6 class="uk-margin-remove font-size-11">JESUS ANTONIO VERGARA</h6>
+                    <div class="uk-flex uk-flex-middle" style="margin-left: 80px;">
+                        <div class="width-90">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Subtotal</h6>
+                            <h6 class="uk-margin-remove font-size-11 color-blue">$0</h6>
                         </div>
-                        <div class="width-90" style="margin-left: 40px;">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Documento</h6>
-                            <h6 class="uk-margin-remove font-size-11">CC-10232306</h6>
+                        <div class="width-90 padding-horizontal-20">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Impuesto</h6>
+                            <h6 class="uk-margin-remove font-size-11 color-blue">$0</h6>
                         </div>
                         <div class="width-90">
-                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-bold">Teléfono</h6>
-                            <h6 class="uk-margin-remove font-size-11">3128541582</h6>
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold">Total</h6>
+                            <h6 class="uk-margin-remove font-size-11 color-blue">$0</h6>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="box-shadow-down-orders" style="height: 5px; padding-top: 10px;"></div>
+            <div style="margin-top: 10px;">
+                <h5 class="uk-margin-remove color-blue uk-text-bold uk-text-center">Productos</h5>
             </div>
         </div>
     </div>
@@ -489,203 +493,246 @@
         <div class="main-container-orders">
             <div class="uk-flex uk-flex-middle navbar-search-products-orders">
                 <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
-                    <h4 class="uk-margin-remove uk-text-bold">Contabilidad</h4>
+                    <h4 class="uk-margin-remove uk-text-bold">Pedidos</h4>
                 </div>
                 <div>
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Generar documentos contables</h6>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 100px;">Ver mis pedidos</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-left: 50px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Ver documentos contables</h6>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar pedido</h6>
                 </div>
-                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 200px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Generar balance</h6>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 135px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Planilla</h6>
                 </div>
-                <div style="margin-left: 45px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Agregar a PUC</h6>
+                <div style="margin-left: 40px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Pedidos Reorden</h6>
                 </div>
             </div>
             <div style="margin-top: 20px;">
-                <div class="uk-flex uk-flex-middle">
-                    <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
-                        <h6 class="uk-margin-remove font-size-11 uk-text-bold">Fecha inicial</h6>
-                        <input class="input-register-user-orders font-size-12" type="date" style="width: 150px;">
+                <div class="uk-flex uk-flex-middle uk-flex-between">
+                    <div class="uk-flex uk-flex-middle navbar-search-products-re-orders" style="margin-left: 35px;">
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                            <div class="select-create-product-orders " style="width: 145px;">
+                                <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Sysware</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                <div class="select_arrow-create-product-orders">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-horizontal-30">
+                            <h6 class="uk-margin-remove font-size-11 ">Selec. tipo factura</h6>
+                            <div class="select-create-product-orders " style="width: 145px;">
+                                <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>ABC945 - Valerie Martínez</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                <div class="select_arrow-create-product-orders">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-11 ">Selec. estado de factura</h6>
+                            <div class="select-create-product-orders " style="width: 145px;">
+                                <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Abierta</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                <div class="select_arrow-create-product-orders">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; margin-left: 30px; margin-bottom: 2px;">
+                            <h6 class="uk-margin-remove font-size-11">inicio</h6>
+                            <input class="input-register-user-orders font-size-12" type="date" style="width: 145px;">
+                        </div>
+                        <div style="margin-top: 15px; margin-left: 5px; margin-bottom: 2px;">
+                            <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                            <input class="input-register-user-orders font-size-12" type="date" style="width: 145px;">
+                        </div>
                     </div>
-                    <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
-                        <h6 class="uk-margin-remove font-size-11 uk-text-bold ">Fecha Final</h6>
-                        <input class="input-register-user-orders font-size-12" type="date" style="width: 150px;">
-                    </div>
-                    <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
-                        <h6 class="uk-margin-remove font-size-11 uk-text-bold">Profundidad</h6>
-                        <input class="input-register-user-orders font-size-12" style="width: 150px;" placeholder="8">
-                    </div>
-                    <div style="margin-left: 30px;">
-                        <button class="button-search-actualice-orders">Generar balance</button>
+                    <div>
+                        <button class="button-search-actualice-orders" style="width: 110px; margin-right: 150px;">Cargar planillas</button>
                     </div>
                 </div>
             </div>
             <div class="box-shadow-down-orders" style="height: 5px;"></div>
+            <div>
+                <div class="uk-flex uk-flex-middle padding-vertical-5" style="margin-left: 35px; margin-top: 15px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-150">Fecha Apertura</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-180">Conductor</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150">Placa</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-180">Número Planilla</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150"></h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150"></h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-150"></h6>
+                </div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-5" style="margin-left: 35px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove color-blue font-size-11 width-150">2020-05-26 08:33:22</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">Valerie Martínez</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-150">ABC945</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">PL-36</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle" style="margin-right: 20px;">
+                        <div>
+                            <button class="button-search-actualice-orders">PDF</button>
+                        </div>
+                        <div class="padding-horizontal-10">
+                            <button class="button-search-actualice-orders">Ver facturas asociadas</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders">Cerrar planillas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-5" style="margin-left: 35px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove color-blue font-size-11 width-150">2020-05-26 08:33:22</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">Valerie Martínez</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-150">ABC945</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">PL-36</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle" style="margin-right: 20px;">
+                        <div>
+                            <button class="button-search-actualice-orders">PDF</button>
+                        </div>
+                        <div class="padding-horizontal-10">
+                            <button class="button-search-actualice-orders">Ver facturas asociadas</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders">Cerrar planillas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-5" style="margin-left: 35px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove color-blue font-size-11 width-150">2020-05-26 08:33:22</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">Valerie Martínez</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-150">ABC945</h6>
+                        <h6 class="uk-margin-remove color-blue font-size-11 uk-text-center width-180">PL-36</h6>
+                    </div>
+                    <div class="uk-flex uk-flex-middle" style="margin-right: 20px;">
+                        <div>
+                            <button class="button-search-actualice-orders">PDF</button>
+                        </div>
+                        <div class="padding-horizontal-10">
+                            <button class="button-search-actualice-orders">Ver facturas asociadas</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders">Cerrar planillas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
         </div>
     </div>
     <!-- Agregar a PUC-->
-    <div style="display: none">
+    <div style="display: inline">
         <div class="main-container-orders">
-            <div class="uk-flex uk-flex-middle navbar-search-products-orders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="z-index: 2000; position: relative;">
                 <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
-                    <h4 class="uk-margin-remove uk-text-bold">Contabilidad</h4>
+                    <h4 class="uk-margin-remove uk-text-bold">Pedidos</h4>
                 </div>
                 <div>
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 60px;">Generar documentos contables</h6>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 100px;">Ver mis pedidos</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-left: 60px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Ver documentos contables</h6>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar pedido</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-center" style="margin-left: 60px;">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" ">Generar balance</h6>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Planilla</h6>
                 </div>
-                <div class="button-pendients-reports uk-flex uk-flex-middle " style="margin-left: 55px; ">
-                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer " style="padding-top: 30px; padding-left: 30px; ">Agregar a PUC</h6>
-                </div>
-            </div>
-            <div style="margin-top: 20px; ">
-                <h6 class="uk-margin-remove uk-text-bold color-blue " style="padding-left: 60px; padding-bottom: 15px; ">Cuenta padre seleccionada:</h6>
-                <div class="hr-tab "></div>
-            </div>
-            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
-                <div style="width: 550px; ">
-                    <h6 class="uk-margin-remove font-weight-500 font-size-12 " style="padding-left: 60px; ">Código</h6>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-weight-500 font-size-12 ">Cuenta</h6>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 180px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Pedidos Reorden</h6>
                 </div>
             </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="width: 550px; ">
-                    <input class="inputs-PUC " type="text " style="margin-left: 60px; ">
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="height: 40px;">
+                <div class="uk-flex uk-flex-middle uk-flex-center button-categories-orders" style="width: 100px !important; padding-left: 30px; padding-right: 20px;">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer uk-text-center font-size-12" style="padding-top: 21px;">Ver mis pedidos</h6>
                 </div>
-                <div style="width: 500px; ">
-                    <input class="inputs-PUC " type="text ">
+                <div style=" margin-left: 40px; ">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12">Reorden por proveedor</h6>
                 </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="width: 550px; ">
-                    <ul class="uk-nav-default " style="padding-left: 60px; " uk-nav>
-                        <li class="uk-parent ">
-                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>1</a>
-                            <ul class="uk-nav-sub ">
-                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Activo</h6>
+                <div style="margin-left: 40px; ">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12">Reorden por proveedor</h6>
                 </div>
             </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="width: 550px; ">
-                    <ul class="uk-nav-default " style="padding-left: 70px; " uk-nav>
-                        <li class="uk-parent ">
-                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>11</a>
-                            <ul class="uk-nav-sub ">
-                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Disponible</h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="width: 550px; ">
-                    <ul class="uk-nav-default " style="padding-left: 80px; " uk-nav>
-                        <li class="uk-parent ">
-                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>1105</a>
-                            <ul class="uk-nav-sub ">
-                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Caja</h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="width: 550px; ">
-                    <ul class="uk-nav-default " style="padding-left: 90px; " uk-nav>
-                        <li class="uk-parent ">
-                                <a href="# " style="color: black !important; font-size: 11px; font-weight: 700 !important; "><span><i class="fas fa-caret-down color-black " style="padding-right: 10px; "></i></span>110505</a>
-                            <ul class="uk-nav-sub ">
-                                <li><a href="# " style="font-size: 11px; "><span><i class="fas fa-caret-down " style="padding-right: 10px; "></i>Sub item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Caja General</h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
-                <div style="width: 550px; ">
-                    <h6 class="uk-margin-remove " style="padding-left: 120px; font-size: 11.2px; font-weight: 700; ">110505</h6>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Caja 1</h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle padding-vertical-5 ">
-                <div style="width: 550px; ">
-                    <h6 class="uk-margin-remove " style="padding-left: 108px; font-size: 11.2px; font-weight: 700; ">110505</h6>
-                </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-11 ">Caja Menores</h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle ">
-                <div style="margin-left: 80px; margin-top: 15px; ">
-                    <ul class="uk-pagination uk-margin-remove-bottom ">
-                        <li hidden><a href="# "><span uk-pagination-previous></span></a></li>
-                        <li class="uk-active "><span style="font-size: 11px; padding-right: 3px; ">1</span></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">2</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">3</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">4</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">5</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">6</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">7</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">8</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">9</a></li>
-                        <li><a href="# " style="font-size: 11px; padding-right: 3px; ">10</a></li>
-                        <li class="uk-disabled " ><span style="padding-right: 3px; ">...</span></li>
-                        <li><a href="# "><span style="padding-right: 3px; " uk-pagination-next></span></a></li>
-                    </ul>
-                </div>
-                <div style="margin-left: 200px; margin-top: 15px; ">
-                    <h6 class="uk-margin-remove color-grey font-size-11 "> <span>1</span> of <span>16</span> pages ( <span>96</span> items ) </h6>
-                </div>
-            </div>
-            <div class="hr-tab "></div>
-            <div class="uk-flex uk-flex-middle " style="margin-top: 15px; ">
-                <div style="width: 550px; ">
-                    <div style="margin-left: 60px; ">
-                        <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Cuenta</h6>
-                        <input class="uk-text-center inputs-PUC " style="width: 230px; " type="text " placeholder="123 ">
+            <div>
+                <div class="uk-flex uk-flex-middle">
+                    <div>
+                        <div class="uk-flex uk-flex-middle navbar-search-products-re-orders" style="margin-left: 35px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Sysware</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">inicio</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div class="padding-horizontal-40">
+                                <h6 class="uk-margin-remove font-size-11 ">Selec. tipo factura</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Venta</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Selec. estado de factura</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Diario</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 30px;">
+                                <button class="button-search-actualice-orders">Consultar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="width: 500px; ">
-                    <h6 class="uk-margin-remove font-size-12 font-weight-500 ">Cuenta</h6>
-                    <input class="uk-text-center inputs-PUC " style="width: 230px; " type="text " placeholder="ABC ">
-                </div>
             </div>
-            <button class="button-PUC uk-text-bold ">Agregar cuenta PUC</button>
         </div>
     </div>
 </body>
