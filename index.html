@@ -158,7 +158,7 @@
             </ul>
         </div>
     </div>
-    <!-- Generar documentos contables -->
+    <!-- ver mis pedidos-->
     <div style="display: none;">
         <!-- Contenido -->
         <div class="main-container-orders">
@@ -393,7 +393,7 @@
             </div>
         </div>
     </div>
-    <!-- Ver documentos contables -->
+    <!-- generar pedido -->
     <div style="display: none">
         <div class="main-container-orders">
             <div class="uk-flex uk-flex-middle navbar-search-products-orders">
@@ -488,7 +488,7 @@
             </div>
         </div>
     </div>
-    <!-- Generar balance-->
+    <!-- planilla-->
     <div style="display: none">
         <div class="main-container-orders">
             <div class="uk-flex uk-flex-middle navbar-search-products-orders">
@@ -641,8 +641,8 @@
             </div>
         </div>
     </div>
-    <!-- Agregar a PUC-->
-    <div style="display: inline">
+    <!-- pedidos reorden / reorden normal -->
+    <div style="display: none">
         <div class="main-container-orders">
             <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="z-index: 2000; position: relative;">
                 <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
@@ -663,7 +663,7 @@
             </div>
             <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="height: 40px;">
                 <div class="uk-flex uk-flex-middle uk-flex-center button-categories-orders" style="width: 100px !important; padding-left: 30px; padding-right: 20px;">
-                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer uk-text-center font-size-12" style="padding-top: 21px;">Ver mis pedidos</h6>
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer uk-text-center font-size-12" style="padding-top: 21px;">Reorden Normal</h6>
                 </div>
                 <div style=" margin-left: 40px; ">
                     <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12">Reorden por proveedor</h6>
@@ -673,7 +673,7 @@
                 </div>
             </div>
             <div>
-                <div class="uk-flex uk-flex-middle">
+                <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
                     <div>
                         <div class="uk-flex uk-flex-middle navbar-search-products-re-orders" style="margin-left: 35px;">
                             <div>
@@ -690,19 +690,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div style="margin-top: 15px; margin-left: 40px; margin-bottom: 2px;">
+                            <div style="margin-top: 17px; margin-left: 35px; margin-bottom: 2px;">
                                 <h6 class="uk-margin-remove font-size-11">inicio</h6>
                                 <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
                             </div>
-                            <div style="margin-top: 15px; margin-left: 20px; margin-bottom: 2px;">
+                            <div style="margin-top: 17px; margin-left: 15px; margin-bottom: 2px;">
                                 <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
                                 <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
                             </div>
-                            <div class="padding-horizontal-40">
-                                <h6 class="uk-margin-remove font-size-11 ">Selec. tipo factura</h6>
+                            <div style="margin-top: 17px; margin-bottom: 2px; margin-left: 15px;">
+                                <h6 class="uk-margin-remove font-size-11">Días a pedir*</h6>
+                                <input class="input-register-user-orders font-size-12" type="text" placeholder="10" style="width: 50px;">
+                            </div>
+                            <div style="margin-left: 5px;">
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione Cliente</h6>
                                 <div class="select-create-product-orders " style="width: 120px;">
                                     <select style="color: rgba(0, 0, 182, 0.459);">
-                                            <option>Venta</option>
+                                            <option>Todas</option>
                                             <option>opción 1</option>
                                             <option>opción 2</option>
                                             <option>opción 3</option>
@@ -712,26 +716,442 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <h6 class="uk-margin-remove font-size-11 ">Selec. estado de factura</h6>
-                                <div class="select-create-product-orders " style="width: 120px;">
-                                    <select style="color: rgba(0, 0, 182, 0.459);">
-                                            <option>Diario</option>
+                            <div style="margin-left: 20px; margin-top: 13px;">
+                                <div class="select-create-product-orders-dashed " style="width: 120px;">
+                                    <select>
+                                            <option>Fabricantes</option>
                                             <option>opción 1</option>
                                             <option>opción 2</option>
                                             <option>opción 3</option>
                                             <option>opción 4</option>
                                         </select>
-                                    <div class="select_arrow-create-product-orders">
+                                    <div class="select_arrow-create-product-orders-dashed">
                                     </div>
                                 </div>
                             </div>
-                            <div style="margin-left: 30px;">
-                                <button class="button-search-actualice-orders">Consultar</button>
+                            <div style="margin-left: 20px; margin-top: 13px;">
+                                <div class="select-create-product-orders-dashed " style="width: 120px;">
+                                    <select>
+                                            <option>Marcas</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders-dashed">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="box-shadow-down-orders" style="height: 5px;"></div>
+                <div style="margin-left: 35px; margin-top: 20px; margin-bottom: 18px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="width-110">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold ">Nº de productos</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue">0</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 30px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">Subtotal</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 30px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">IVA</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 12px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">TOTAL</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Consultar</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Solicitar pedido</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Excel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-110">Producto</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-110">Código de barras</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Presentación</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Fabricante</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Marca</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Línea</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Categoría</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Costo</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">IVA</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Cantidad vendida</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Cantidad en inventario</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Promedio diario</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Cantidad a pedir</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Cantidad contra inventario</h6>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove font-size-11 width-110">Coca cola original lata</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-110">120517100706</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">Unidad</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">Bebidas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Gaseosas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">$1,725.00</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">3</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">0</h6>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove font-size-11 width-110">Coca cola original lata</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-110">120517100706</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">Unidad</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">Bebidas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Gaseosas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">$1,725.00</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">3</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">0</h6>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
+        </div>
+    </div>
+    <!-- pedidos reorden / reorden por provedor -->
+    <div style="display: none;">
+        <div class="main-container-orders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="z-index: 2000; position: relative;">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Pedidos</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 100px;">Ver mis pedidos</h6>
+                </div>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar pedido</h6>
+                </div>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Planilla</h6>
+                </div>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 180px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Pedidos Reorden</h6>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="height: 40px;">
+                <div style="width: 90px !important; padding-left: 40px; padding-right: 10px;">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer uk-text-center font-size-12">Reorden Normal</h6>
+                </div>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style=" margin-left: 40px;">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12" style="padding-top: 21px;">Reorden por proveedor</h6>
+                </div>
+                <div style="margin-left: 40px; ">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12">Reorden por proveedor</h6>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                    <div>
+                        <div class="uk-flex uk-flex-middle navbar-search-products-re-orders" style="margin-left: 35px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Sysware</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 17px; margin-left: 35px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">inicio</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div style="margin-top: 17px; margin-left: 15px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div style="margin-top: 17px; margin-bottom: 2px; margin-left: 15px;">
+                                <h6 class="uk-margin-remove font-size-11">Días a pedir*</h6>
+                                <input class="input-register-user-orders font-size-12" type="text" placeholder="10" style="width: 50px;">
+                            </div>
+                            <div style="margin-left: 5px;">
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione Cliente</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Todas</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 20px; margin-top: 13px;">
+                                <div class="select-create-product-orders-dashed " style="width: 120px;">
+                                    <select>
+                                            <option>Fabricantes</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders-dashed">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 20px; margin-top: 13px;">
+                                <div class="select-create-product-orders-dashed " style="width: 120px;">
+                                    <select>
+                                            <option>Marcas</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders-dashed">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-shadow-down-orders" style="height: 5px;"></div>
+                <div style="margin-left: 35px; margin-top: 20px; margin-bottom: 18px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="width-110">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold ">Nº de productos</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue">0</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 30px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">Subtotal</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 30px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">IVA</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div class="width-90" style="margin-left: 12px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">TOTAL</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Consultar</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Cancelar</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Solicitar pedido</button>
+                        </div>
+                        <div>
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Excel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-90">Proveedor</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-110">Producto</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-110">Código de barras</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Presentación</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Fabricante</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Marca</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Línea</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Categoría</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Costo</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">IVA</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Cantidad vendida</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Cantidad en inventario</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-70">Promedio diario</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-50">Cantidad a pedir</h6>
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 uk-text-center width-90">Cantidad contra inventario</h6>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-90"></h6>
+                    <h6 class="uk-margin-remove font-size-11 width-110">Coca cola original lata</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-110">120517100706</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">Unidad</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">Bebidas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Gaseosas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">$1,725.00</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">3</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">0</h6>
+                </div>
+                <div class="hr-tab"></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-110"></h6>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-vertical-10" style="margin-left: 35px; margin-right: 20px;">
+                    <h6 class="uk-margin-remove color-blue uk-text-bold font-size-12 width-90"></h6>
+                    <h6 class="uk-margin-remove font-size-11 width-110">Coca cola original lata</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-110">120517100706</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">Unidad</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Coca cola</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">Bebidas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">Gaseosas</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">$1,725.00</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">3</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-70">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-50">0</h6>
+                    <h6 class="uk-margin-remove font-size-11 uk-text-center width-90">0</h6>
+                </div>
+                <div class="hr-tab"></div>
+            </div>
+        </div>
+    </div>
+    <!-- pedidos reorden / reorden por provedor 2 -->
+    <div style="display: inline;">
+        <div class="main-container-orders">
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="z-index: 2000; position: relative;">
+                <div class="uk-flex uk-flex-center uk-flex-middle" style="padding-left: 40px; ">
+                    <h4 class="uk-margin-remove uk-text-bold">Pedidos</h4>
+                </div>
+                <div>
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer uk-text-center" style="padding-left: 100px;">Ver mis pedidos</h6>
+                </div>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Generar pedido</h6>
+                </div>
+                <div style="margin-left: 60px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer">Planilla</h6>
+                </div>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 45px; width: 180px;">
+                    <h6 class="uk-margin-remove uk-text-bold color-blue cursor-pointer" style="padding-top: 21px;">Pedidos Reorden</h6>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle navbar-search-products-orders" style="height: 40px;">
+                <div style="width: 90px !important; padding-left: 40px; padding-right: 10px;">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer uk-text-center font-size-12">Reorden Normal</h6>
+                </div>
+                <div style=" margin-left: 40px;">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12">Reorden por proveedor</h6>
+                </div>
+                <div class="button-trademark-orders uk-flex uk-flex-middle uk-flex-center" style="margin-left: 40px; ">
+                    <h6 class="uk-margin-remove font-weight-500 color-blue cursor-pointer font-size-12" style="padding-top: 21px;">Reorden por proveedor</h6>
+                </div>
+            </div>
+            <div>
+                <div class="uk-flex uk-flex-middle" style="margin-top: 5px;">
+                    <div>
+                        <div class="uk-flex uk-flex-middle navbar-search-products-re-orders" style="margin-left: 35px;">
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione tienda</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>Sysware</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 17px; margin-left: 25px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">inicio</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione hora de inicio</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>1 A M</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 17px; margin-left: 25px; margin-bottom: 2px;">
+                                <h6 class="uk-margin-remove font-size-11">Fecha Final</h6>
+                                <input class="input-register-user-orders font-size-12" type="date" style="width: 120px;">
+                            </div>
+                            <div>
+                                <h6 class="uk-margin-remove font-size-11 ">Seleccione hora de final</h6>
+                                <div class="select-create-product-orders " style="width: 120px;">
+                                    <select style="color: rgba(0, 0, 182, 0.459);">
+                                            <option>1 A M</option>
+                                            <option>opción 1</option>
+                                            <option>opción 2</option>
+                                            <option>opción 3</option>
+                                            <option>opción 4</option>
+                                        </select>
+                                    <div class="select_arrow-create-product-orders">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-left: 25px;">
+                                <button class="button-search-actualice-orders">Reorden por consumo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-shadow-down-orders" style="height: 5px;"></div>
+                <div style="margin-left: 35px; margin-top: 20px; margin-bottom: 18px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="width-110">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold ">Nº de productos</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue">0</h6>
+                        </div>
+                        <div class="width-80" style="margin-left: 20px;">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">Subtotal</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div class="width-80">
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">IVA</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div>
+                            <h6 class="uk-margin-remove font-size-13 color-blue uk-text-bold uk-text-center">TOTAL</h6>
+                            <h6 class="uk-margin-remove font-size-12 color-blue uk-text-center">$0.00</h6>
+                        </div>
+                        <div style="margin-left: 105px;">
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Consultar</button>
+                        </div>
+                        <div style="margin-left: 32px;">
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Solicitar pedido</button>
+                        </div>
+                        <div style="margin-left: 30px;">
+                            <button class="button-search-actualice-orders" style="width: 107px; margin-right:8px;">Excel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-tab"></div>
             </div>
         </div>
     </div>
